@@ -1,7 +1,7 @@
 Hey! 
 This is a summary for the program in this repository. 
 Thank you for reading! :) 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 This C++ program, written with object-oriented programming (OOP) principles on a Linux machine, simulates a cryptocurrency blockchain network with multiple threads. 
 It includes a server thread that manages the blockchain and four miner threads that compute hashes for new blocks. 
 The program utilizes pthread locks and condition variables to ensure proper synchronization between the threads on a single-core system.
@@ -11,4 +11,3 @@ The server thread uses a condition variable to wait for notifications from miner
 When a valid block is received, the server appends it to the blockchain, and the miners check for the updated blockchain to start mining on the new block.
 An additional miner thread is included to test the server's ability to handle invalid block submissions by sending an invalid block every second.
 The program can be run using the provided Makefile, requiring g++ and ZLIB. It follows safe thread coding practices and demonstrates the use of condition variables and mutexes for synchronizing access to shared resources between multiple threads.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
