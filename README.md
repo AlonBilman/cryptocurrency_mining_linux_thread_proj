@@ -11,3 +11,6 @@ The server thread uses a condition variable to wait for notifications from miner
 When a valid block is received, the server appends it to the blockchain, and the miners check for the updated blockchain to start mining on the new block.
 An additional miner thread is included to test the server's ability to handle invalid block submissions by sending an invalid block every second.
 The program can be run using the provided Makefile, requiring g++ and ZLIB. It follows safe thread coding practices and demonstrates the use of condition variables and mutexes for synchronizing access to shared resources between multiple threads.
+
+Enhanced the program by converting it to a multiprocess architecture using Docker containers and developed a script to automate the system's launch and management. 
+-  https://github.com/AlonBilman/linux_processes_task3
