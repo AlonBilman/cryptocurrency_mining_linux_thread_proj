@@ -13,4 +13,4 @@ An additional miner thread is included to test the server's ability to handle in
 The program can be run using the provided Makefile, requiring g++ and ZLIB. It follows safe thread coding practices and demonstrates the use of condition variables and mutexes for synchronizing access to shared resources between multiple threads.
 
 Enhanced the program by converting it to a multiprocess architecture using Docker containers and developed a script to automate the system's launch and management. 
--  https://github.com/AlonBilman/linux_processes_task3
+-  https://github.com/AlonBilman/cryptocurrency_mining_linux_processes_proj 
